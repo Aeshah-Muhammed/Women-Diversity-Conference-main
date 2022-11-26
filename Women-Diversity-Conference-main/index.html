@@ -1198,7 +1198,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="noneshown-donate">
                 <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
                     <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="colmun-title">
@@ -1218,7 +1218,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
                                 <li><i class="lni-close"></i><span class="text">Certificate</span></li>
                             </ul>
                         </div>
-                        <a href="#" class="btn btn-common">RSVP</a>
+                      <div  id="donate" onclick="click()">
+                        <a href="#donate" class="btn btn-common">RSVP</a>
+                      </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
@@ -1240,7 +1243,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
                                 <li><i class="lni-check-mark-circle"></i><span class="text">Certificate</span></li>
                             </ul>
                         </div>
-                        <a href="#" class="btn btn-common">Donate</a>
+                      <div id="donate" onclick="click()">
+                        <a href="#donate" class="btn btn-common">Donate</a>
+                      </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
@@ -1262,10 +1267,49 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
                                 <li><i class="lni-check-mark-circle"></i><span class="text">Certificate</span></li>
                             </ul>
                         </div>
-                        <a href="#" class="btn btn-common">Donate</a>
+                       <div id="donate" onclick="click()">
+                        <a href="#donate" class="btn btn-common">Donate</a>
+                       </div>
+                      
+                       
+
+
                     </div>
                 </div>
             </div>
+            <div class="donate-container">
+                <div class="donate-section">
+                   <div class="donates">
+                    <h4>Donate</h4>
+                    <div class="donate-icon">
+                <h4>X</h4>
+                    </div>
+                   </div>
+                    <form action="">
+                <div class="form">
+                    <label for="Fullname">Name</label>
+                    <input type="text" name="name" placeholder="Full name">
+                </div>
+                <div class="form">
+                    <label for="Twitterhandle">Twitter Handle</label>
+                    <input type="text" name="Twitterhandle" placeholder="@yourtwitterhandle">
+                </div>
+                <div class="form">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="example@domain.com">
+                </div>
+                <div class="form">
+                    <label for="value">Donation Amount:</label>
+                   <select name="value" id="donate-amount">
+                    <option value="20">Minimum - $20</option>
+                    <option value="20">Twidg - $60</option>
+                    <option value="20">Hheuei - $120</option>
+                   </select>
+                </div>
+                    </form>
+                    <span id="donation-text">We wil not keep your details on our server.</span>
+                </div>
+                </div>
         </div>
     </section>
 

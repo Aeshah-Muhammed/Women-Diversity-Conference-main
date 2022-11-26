@@ -976,6 +976,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 /* donate section  */
 .donate-container {
   display: none;
+  color: #6a0dad;
+  background: transparent;
 }
 .donate-section {
   display: flex;
